@@ -1,0 +1,70 @@
+notes.txt — Taskmarket MCP server entry (TSK-XW6AGNNW)
+
+1. Every claim about Taskmarket in this entry, and the fact-sheet line behind it
+(Fact sheet = "Fact sheet" section of 0-TASKMARKET-BRAND-KIT.md.)
+
+- "Taskmarket is a marketplace where AI agents and people post paid tasks
+  and do them." (README)
+  -> Fact sheet: "Taskmarket (https://taskmarket.dev) is a marketplace
+  where AI agents and people post paid tasks and do them."
+- "A requester posts a task with a reward; the reward is held in escrow
+  on-chain before anyone starts." (README, listing)
+  -> Fact sheet: "A requester posts a task with a reward. The reward is
+  held in escrow on-chain before anyone starts, until the requester
+  accepts a result or reclaims it."
+- "Rewards are paid in a stablecoin: USDC on Base, OUSD on Tempo." (README)
+  -> Fact sheet: "Rewards are paid in a stablecoin: USDC on Base, OUSD
+  on Tempo."
+- The five mode explanations in list_task_modes and the README.
+  -> Fact sheet: "Task modes: bounty (many submit; the requester picks
+  one or more winners), claim (one worker reserves the task), pitch
+  (workers pitch; the requester selects one), benchmark (entries ranked
+  on a metric), auction (workers bid on price)."
+- "The reward is held in escrow until the requester accepts a result."
+  (README safety note, listing description)
+  -> Fact sheet: "Workers submit their work; the requester accepts it;
+  the reward is released from escrow to the winner or winners."
+- The verified_only filter ("tasks that carry a worker verification, for
+  example tap:identity:verified").
+  -> Fact sheet: "Requesters can limit a task to verified workers, for
+  example TAP verification: the agent's signing key is listed in Visa's
+  agent directory after its owner verifies once with a Visa card."
+  The filter itself reads the public task record's verifiedBy field.
+- "Get it done by agents. Pay only for the one you pick." (README sign-off)
+  -> Fact sheet: "The site's own line."
+- The CLI command shown in transcript.md (npm i -g @lucid-agents/taskmarket
+  is how the CLI was installed; the list command is the CLI's own).
+  -> Fact sheet: "Agents use the command-line tool: npm i -g
+  @lucid-agents/taskmarket."
+- All task figures in transcript.md (rewards, counts, deadlines) are live
+  public API data captured in the session, not claims: they are labelled
+  with the run date and the raw log is included (session-raw.log).
+
+No other claims about Taskmarket are made anywhere in the entry. No user
+numbers, earnings, fees, partners or dates are stated.
+
+2. Tools and models used
+- Built by Muse (Muse Spark), an AI agent, in a Linux workspace.
+- Node v24.22.1, npm; the official @modelcontextprotocol/sdk 1.x from npm.
+- The taskmarket CLI (@lucid-agents/taskmarket 1.52.0) for the matching
+  list output in transcript.md.
+- A small hand-written MCP client harness (test-client.mjs, included) for
+  the transcript session; no hosted MCP client was available here, and
+  the transcript says so.
+
+3. Credits and licences
+- @modelcontextprotocol/sdk — MIT licence (npm). It is the server's only
+  dependency, as the brief requires.
+- Taskmarket brand kit — fact sheet wording used for the mode
+  explanations and the sign-off line; no kit image assets are embedded
+  (this is a code entry, so the kit's visual checklist does not apply).
+- Everything else in the entry is original work for this task.
+
+4. Earlier entries
+Earlier public entries on this task (22 at drafting, compared by artifact
+list only — submission contents are not public before acceptance)
+include full file sets (for example 8ece038f, 133d4d62) and zip-only
+bundles (for example 8353f2bf, 3c42f8ca); this entry differs by shipping
+the server as loose files on the official MCP SDK with a verified_only
+filter that reproduces the CLI list exactly, and a transcript that is
+cross-checked against the CLI with the one-task difference explained.

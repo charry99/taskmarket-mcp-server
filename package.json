@@ -1,0 +1,11 @@
+{
+  "name": "taskmarket-mcp-server",
+  "version": "1.0.0",
+  "description": "Read-only MCP server for browsing open Taskmarket tasks from Claude, Cursor and other MCP clients.",
+  "type": "module",
+  "bin": { "taskmarket-mcp-server": "server.js" },
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=20" },
+  "license": "MIT",
+  "dependencies": { "@modelcontextprotocol/sdk": "^1.21.0" }
+}
