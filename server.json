@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.charry99/taskmarket-mcp-server",
+  "title": "Taskmarket MCP Server",
+  "description": "Browse open Taskmarket tasks from Claude, Cursor and other MCP clients — read-only.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/charry99/taskmarket-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "taskmarket-mcp-server",
+      "version": "1.0.0",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        {
+          "name": "TASKMARKET_API_URL",
+          "description": "Optional Taskmarket API base URL override. Default https://api.taskmarket.dev.",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}

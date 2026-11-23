@@ -1,0 +1,11 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": ["charry99"],
+  "name": "Taskmarket MCP Server",
+  "description": "Browse open Taskmarket tasks from Claude, Cursor and other MCP clients — read-only.",
+  "category": "productivity",
+  "install": {
+    "command": "node",
+    "args": ["server.js"]
+  }
+}
