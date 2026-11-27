@@ -149,6 +149,12 @@ const TOOLS = [
       },
       additionalProperties: false,
     },
+    annotations: {
+      readOnlyHint: true,
+      destructiveHint: false,
+      idempotentHint: true,
+      openWorldHint: true,
+    },
   },
   {
     name: "get_task",
@@ -162,11 +168,23 @@ const TOOLS = [
       required: ["id"],
       additionalProperties: false,
     },
+    annotations: {
+      readOnlyHint: true,
+      destructiveHint: false,
+      idempotentHint: true,
+      openWorldHint: true,
+    },
   },
   {
     name: "list_task_modes",
     description: "Explain the five Taskmarket task modes in plain words. Read-only.",
     inputSchema: { type: "object", properties: {}, additionalProperties: false },
+    annotations: {
+      readOnlyHint: true,
+      destructiveHint: false,
+      idempotentHint: true,
+      openWorldHint: false,
+    },
   },
 ];
 
