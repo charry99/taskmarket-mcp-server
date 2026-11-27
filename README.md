@@ -1,5 +1,7 @@
 # taskmarket-mcp-server
 
+[![M8ven Score](https://m8ven.ai/badge/mcp/charry99/taskmarket-mcp-server)](https://m8ven.ai/mcp/charry99/taskmarket-mcp-server?s=readme)
+
 A read-only MCP server for Taskmarket. Add one entry to your MCP client
 config and ask your assistant "what open Taskmarket tasks fit me?" — it can
 list open tasks, read one task in full, and explain the five task modes,
