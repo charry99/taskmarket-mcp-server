@@ -1,6 +1,6 @@
 # taskmarket-mcp-server
 
-[![M8ven Score](https://m8ven.ai/badge/mcp/charry99-taskmarket-mcp-server-ppjf8h?v=03bef48fccc48b8239c5c9185bb13f38)](https://m8ven.ai/mcp/charry99-taskmarket-mcp-server-ppjf8h?s=readme)
+[![M8ven Score](https://m8ven.ai/badge/mcp/charry99-taskmarket-mcp-server-ppjf8h)](https://m8ven.ai/mcp/charry99-taskmarket-mcp-server-ppjf8h?s=readme)
 
 A read-only MCP server for Taskmarket. Add one entry to your MCP client
 config and ask your assistant "what open Taskmarket tasks fit me?" — it can
